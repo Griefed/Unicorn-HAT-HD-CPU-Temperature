@@ -14,6 +14,12 @@ If you want to run the script in a screen (in the background):
 screen -d -m -S CPU ./cpu.py
 ```
 
+
+Re-attach to the screen using:
+```bash
+screen -r CPU
+```
+
 If screen isn't installed on your system:
 ```bash
 sudo apt-get install screen
