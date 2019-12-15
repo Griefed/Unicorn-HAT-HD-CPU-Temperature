@@ -37,7 +37,7 @@ try:
 		draw.text((text_x, text_y), TEXT, fill=(255, 255, 255), font=font)
 		for scroll in range(text_width - width+ 90):
 			for x in range(width):
-				if cpu.temperature <= 35:
+				if cpu.temperature <= 55:
 					hue = (x + scroll) / float(text_width)
 				else:
 					hue = 0.0 #red
