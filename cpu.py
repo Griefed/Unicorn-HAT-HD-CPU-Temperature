@@ -8,7 +8,10 @@ import unicornhathd
 
 print("""Unicorn HAT HD: CPU Temperature
 
-Displays the CPU Temperature on your Unicorn HAT HD!
+Displays the CPU Temperature on your Unicorn HAT HD, in fancy rainbow colours!
+Should the temperature exceed 55Degrees Celsius, the text will be coloured red to get your attention!
+
+Exit with CTRL + C!
 """)
 
 FONT = ('/usr/share/fonts/truetype/piboto/PibotoCondensed-Regular.ttf', 12)
