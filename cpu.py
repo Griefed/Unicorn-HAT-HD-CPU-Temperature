@@ -25,6 +25,7 @@ text_y = 0
 font_file, font_size = FONT
 font = ImageFont.truetype(font_file, font_size)
 degree_sign= u'\N{DEGREE SIGN}'
+warning = 55 #Temperature at which alarms go off
 
 try:
 	while True:
@@ -37,7 +38,7 @@ try:
 		draw.text((text_x, text_y), TEXT, fill=(255, 255, 255), font=font)
 		for scroll in range(text_width - width+ 90):
 			for x in range(width):
-				if cpu.temperature <= 55:
+				if int(cpu.temperature) <= warning:
 					hue = (x + scroll) / float(text_width)
 				else:
 					hue = 0.0 #red
