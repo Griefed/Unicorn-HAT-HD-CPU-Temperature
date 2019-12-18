@@ -39,7 +39,7 @@ try:
 		for scroll in range(text_width - width+ 90):
 			for x in range(width):
 				if int(cpu.temperature) <= warning:
-					hue = (x + scroll) / float(text_width)
+					hue = (x + scroll) / float(text_width) #Rainbow colours!
 				else:
 					hue = 0.0 #red
 				br, bg, bb = [int(n * 255) for n in colorsys.hsv_to_rgb(hue, 1.0, 1.0)]
