@@ -36,7 +36,7 @@ try:
 		draw = ImageDraw.Draw(image)
 		draw.text((text_x, text_y), TEXT, fill=(255, 255, 255), font=font)
 		check = int(cpu.temperature)
-		for scroll in range(text_width - width + 90):
+		for prolong in range(text_width - width): #Update every couple of seconds instead of several times per second
 			for x in range(width):
 				if check < 30:
 					hue = 0.5
@@ -52,8 +52,6 @@ try:
 					hue = 0.08333333
 				if check >= 55:
 					hue = 0.0
-				#else:
-				#	hue = (x + scroll) / float(text_width)
 				br, bg, bb = [int(n * 255) for n in colorsys.hsv_to_rgb(hue, 1.0, 1.0)]
 				for y in range(height):
 					pixel = image.getpixel((x, y))
