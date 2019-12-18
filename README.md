@@ -1,6 +1,6 @@
 # Unicorn HAT HD CPU Temperature
 
-Displays the CPU Temperature in fancy rainbow colours
+Displays the CPU Temperature in fancy rainbow colours or in different colours depending on the CPU temperature. You choose!
 
 Should the temperature exceed 55°C, the text will be coloured red to get your attention!
 
